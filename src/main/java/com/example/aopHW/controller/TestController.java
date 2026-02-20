@@ -20,4 +20,14 @@ public class TestController {
     public String hello(){
         return this.testService.hello();
     }
+
+    @GetMapping("/hello-world")
+    public String helloWorld(){
+        return this.testService.helloWorld();
+    }
+
+    @GetMapping("/get-records")
+    public Object getRecords(){
+        return this.testService.getRecords();
+    }
 }
